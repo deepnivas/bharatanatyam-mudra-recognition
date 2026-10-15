@@ -1,0 +1,66 @@
+======================================================================
+       BHARATANATYAM MUDRA RECOGNITION - MILESTONE 3 FINAL TEST REPORT
+======================================================================
+
+1. DATASET SPLITS & SAMPLE COUNTS
+----------------------------------------
+Training split (80% train):            1744 samples
+Validation split (20% val):            437 samples
+Total training data (detected hands):  2181 samples
+Total test images:                     1050 samples
+Successful MediaPipe test detections:  963 samples
+Failed MediaPipe test detections:      87 samples
+
+2. MODEL SELECTION (VALIDATION PERFORMANCE)
+----------------------------------------
+        model  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1
+          SVM    0.8924           0.8870        0.8871    0.8807       0.8868
+Random Forest    0.8719           0.8651        0.8641    0.8611       0.8683
+          MLP    0.8810           0.8846        0.8769    0.8755       0.8797
+
+Selected Model: SVM
+Selection Reason: Achieved highest validation Macro F1 score (0.8807) across all 30 classes.
+
+3. FINAL TEST RESULTS (INDEPENDENT TEST SET)
+----------------------------------------
+A. Conditional Classifier Performance (on 963 successfully detected hands):
+   - Accuracy:          0.8920 (89.20%)
+   - Macro Precision:   0.8899 (88.99%)
+   - Macro Recall:      0.8848 (88.48%)
+   - Macro F1:          0.8829 (88.29%)
+   - Weighted F1:       0.8898 (88.98%)
+
+B. End-to-End Coverage-Aware Performance (across all 1050 test images):
+   - End-to-end coverage-aware accuracy: 0.8181 (81.81%)
+   - Total correct predictions:          859 / 1050
+   - Upstream landmark failures:         87 / 1050 (8.29%)
+   Note: MediaPipe failure images are treated as unclassified/incorrect,
+   accurately reflecting real-world end-to-end system throughput.
+
+4. CLASS-LEVEL HIGHLIGHTS
+----------------------------------------
+Strongest Mudras (Top F1):
+   - 11-Kapitta          : F1=1.0000 | Prec=1.0000 | Rec=1.0000 | Supp=33
+   - 13-Katakamukha_2    : F1=1.0000 | Prec=1.0000 | Rec=1.0000 | Supp=28
+   - 16-Chandrakala      : F1=1.0000 | Prec=1.0000 | Rec=1.0000 | Supp=35
+   - 29-Tamrachuda       : F1=1.0000 | Prec=1.0000 | Rec=1.0000 | Supp=28
+   - 6-Ardhachandra      : F1=0.9859 | Prec=0.9722 | Rec=1.0000 | Supp=35
+
+Weakest Mudras (Lowest F1):
+   - 24-Bhramara         : F1=0.3636 | Prec=0.5000 | Rec=0.2857 | Supp=28
+   - 21-Kangula          : F1=0.6190 | Prec=0.7647 | Rec=0.5200 | Supp=25
+   - 12-Katakamukha_1    : F1=0.6914 | Prec=0.5490 | Rec=0.9333 | Supp=30
+   - 23-Chathura         : F1=0.7213 | Prec=0.7586 | Rec=0.6875 | Supp=32
+   - 28-Mukula           : F1=0.7347 | Prec=0.6923 | Rec=0.7826 | Supp=23
+
+Top Commonly Confused Class Pairs on Test Set:
+   - True: 24-Bhramara -> Predicted: 12-Katakamukha_1 (19 samples)
+   - True: 21-Kangula -> Predicted: 28-Mukula (7 samples)
+   - True: 2-Tripataka -> Predicted: 1-Pataka (6 samples)
+   - True: 17-Padmakosha -> Predicted: 27-Samdamsha (6 samples)
+   - True: 26-Hamsapaksha -> Predicted: 23-Chathura (5 samples)
+   - True: 3-Ardhapataka -> Predicted: 2-Tripataka (4 samples)
+   - True: 23-Chathura -> Predicted: 24-Bhramara (4 samples)
+   - True: 18-Sarpashirasha -> Predicted: 1-Pataka (3 samples)
+
+======================================================================

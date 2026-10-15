@@ -1,0 +1,21 @@
+# Python environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Credentials
+.env
+.env.*
+
+# Raw dataset
+data/raw/
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Temporary webcam captures
+reports/webcam_debug_frame.jpg
+reports/webcam_sample.jpg

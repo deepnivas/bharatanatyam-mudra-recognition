@@ -1,0 +1,4 @@
+model,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+SVM,0.8924,0.887,0.8871,0.8807,0.8868
+Random Forest,0.8719,0.8651,0.8641,0.8611,0.8683
+MLP,0.881,0.8846,0.8769,0.8755,0.8797

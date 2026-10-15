@@ -1,0 +1,133 @@
+{
+  "model": "SVM RBF",
+  "kernel": "rbf",
+  "C": 10.0,
+  "probability": true,
+  "random_state": 42,
+  "feature count": 63,
+  "training samples": 2181,
+  "successful test samples": 963,
+  "total test samples": 1050,
+  "MediaPipe test failures": 87,
+  "conditional_metrics": {
+    "accuracy": 0.9148,
+    "macro_precision": 0.9139,
+    "macro_recall": 0.9091,
+    "macro_f1": 0.9093,
+    "weighted_f1": 0.9146
+  },
+  "end_to_end_coverage_aware_accuracy": 0.839,
+  "correct_predictions": 881,
+  "weakest_5_mudras": [
+    {
+      "class": "24-Bhramara",
+      "f1_score": 0.6275,
+      "precision": 0.6957,
+      "recall": 0.5714,
+      "support": 28
+    },
+    {
+      "class": "21-Kangula",
+      "f1_score": 0.6667,
+      "precision": 0.75,
+      "recall": 0.6,
+      "support": 25
+    },
+    {
+      "class": "12-Katakamukha_1",
+      "f1_score": 0.7353,
+      "precision": 0.6579,
+      "recall": 0.8333,
+      "support": 30
+    },
+    {
+      "class": "26-Hamsapaksha",
+      "f1_score": 0.7692,
+      "precision": 0.7812,
+      "recall": 0.7576,
+      "support": 33
+    },
+    {
+      "class": "28-Mukula",
+      "f1_score": 0.7755,
+      "precision": 0.7308,
+      "recall": 0.8261,
+      "support": 23
+    }
+  ],
+  "top_confused_pairs": [
+    {
+      "true": "24-Bhramara",
+      "predicted": "12-Katakamukha_1",
+      "count": 11
+    },
+    {
+      "true": "2-Tripataka",
+      "predicted": "1-Pataka",
+      "count": 6
+    },
+    {
+      "true": "21-Kangula",
+      "predicted": "28-Mukula",
+      "count": 6
+    },
+    {
+      "true": "12-Katakamukha_1",
+      "predicted": "24-Bhramara",
+      "count": 5
+    },
+    {
+      "true": "17-Padmakosha",
+      "predicted": "27-Samdamsha",
+      "count": 5
+    },
+    {
+      "true": "23-Chathura",
+      "predicted": "26-Hamsapaksha",
+      "count": 4
+    },
+    {
+      "true": "18-Sarpashirasha",
+      "predicted": "1-Pataka",
+      "count": 3
+    },
+    {
+      "true": "19-Mrugashirsha",
+      "predicted": "26-Hamsapaksha",
+      "count": 3
+    }
+  ],
+  "classes": [
+    "1-Pataka",
+    "2-Tripataka",
+    "3-Ardhapataka",
+    "4-Kartharimukha",
+    "5-Mayura",
+    "6-Ardhachandra",
+    "7-Arala",
+    "8-Shukatunda",
+    "9-Mushti",
+    "10-Shikara",
+    "11-Kapitta",
+    "12-Katakamukha_1",
+    "13-Katakamukha_2",
+    "14-Katakamukha_3",
+    "15-Suchi",
+    "16-Chandrakala",
+    "17-Padmakosha",
+    "18-Sarpashirasha",
+    "19-Mrugashirsha",
+    "20-Simhamukha",
+    "21-Kangula",
+    "22-Alapadma",
+    "23-Chathura",
+    "24-Bhramara",
+    "25-Hamsassya",
+    "26-Hamsapaksha",
+    "27-Samdamsha",
+    "28-Mukula",
+    "29-Tamrachuda",
+    "30-Trishula"
+  ],
+  "model_file": "models/final_svm_model.joblib"
+}
