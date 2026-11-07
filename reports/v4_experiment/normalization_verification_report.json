@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "train_total_samples": 13416,
+  "train_detected_samples": 13416,
+  "test_total_samples": 1050,
+  "test_detected_samples": 963,
+  "schema_verified": true,
+  "wrist_origin_max_error": {
+    "train": 0.0,
+    "test": 0.0,
+    "pass": true
+  },
+  "hand_span_scale": {
+    "train_min": 0.9999993082457607,
+    "train_max": 1.0000006904987615,
+    "train_mean": 1.0000000009345973,
+    "test_min": 0.9999993717008027,
+    "test_max": 1.0000006982022562,
+    "test_mean": 1.0000000152396427,
+    "pass": true
+  },
+  "coordinate_bounds": {
+    "train_min": -0.9999616146087646,
+    "train_max": 0.9978244304656982,
+    "test_min": -0.999098,
+    "test_max": 0.884478,
+    "pass": true
+  }
+}

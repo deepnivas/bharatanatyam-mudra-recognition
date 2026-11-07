@@ -1,0 +1,40 @@
+========================================================================
+    AUGMENTED SVM MODEL (V2) EVALUATION REPORT
+========================================================================
+
+1. DATASET & TRAINING CONFIGURATION
+----------------------------------------
+Total Augmented Training Samples: 12280
+  - Original Benchmark Training:  2181
+  - New Dataset Augmented:        10099
+Eligible Augmented Classes:       26 classes
+Non-Augmented Baseline Classes:   4 classes (Kangula, Chathura, Samdamsha, Tamrachuda)
+Preprocessing:                    StandardScaler
+Classifier:                       SVC(kernel='rbf', C=10.0, class_weight='balanced', probability=True)
+
+2. VALIDATION HOLDOUT RESULTS (80/20 Stratified Split)
+----------------------------------------
+Validation Accuracy:              94.58%
+Validation Macro F1:              0.9333
+
+3. OFFICIAL BENCHMARK TEST PERFORMANCE (963 Detected Samples out of 1,050)
+----------------------------------------
+Conditional Accuracy:             89.82% (Baseline: 91.48% | Delta: -1.66%)
+End-to-End Coverage-Aware Acc:    82.38% (Baseline: 83.90% | Delta: -1.52%)
+Macro Precision:                  0.8979 (Baseline: 0.9234)
+Macro Recall:                     0.8919 (Baseline: 0.9148)
+Macro F1-Score:                   0.8915 (Baseline: 0.9137 | Delta: -0.0222)
+Weighted F1-Score:                0.8974
+
+4. TOP CONFUSED CLASS PAIRS
+----------------------------------------
+  24-Bhramara          --> Predicted as 12-Katakamukha_1     (13 errors)
+  17-Padmakosha        --> Predicted as 27-Samdamsha         (8 errors)
+  21-Kangula           --> Predicted as 28-Mukula            (7 errors)
+  3-Ardhapataka        --> Predicted as 2-Tripataka          (5 errors)
+  12-Katakamukha_1     --> Predicted as 24-Bhramara          (5 errors)
+  2-Tripataka          --> Predicted as 1-Pataka             (4 errors)
+  23-Chathura          --> Predicted as 26-Hamsapaksha       (4 errors)
+  18-Sarpashirasha     --> Predicted as 1-Pataka             (3 errors)
+  2-Tripataka          --> Predicted as 18-Sarpashirasha     (2 errors)
+  8-Shukatunda         --> Predicted as 2-Tripataka          (2 errors)

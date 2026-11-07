@@ -1,0 +1,4 @@
+config_id,config_name,confidence,total_images,detected_count,detection_rate_pct,baseline_detected_count,baseline_rate_pct,net_gain_over_baseline,recovered_images,invalid_landmarks,execution_time_sec,throughput_fps
+C1_raw_conf03,Raw Image (Conf=0.3),0.3,13844,11247,81.24,10099,72.95,1148,1164,0,215.9,64.1
+C6_upscale15_conf03,Upscale 1.5x (Conf=0.3),0.3,13844,11422,82.51,10099,72.95,1323,1343,0,244.4,56.6
+C10_pad_upscale15_conf03,Square Pad + 1.5x (Conf=0.3),0.3,13844,11445,82.67,10099,72.95,1346,1369,0,256.8,53.9

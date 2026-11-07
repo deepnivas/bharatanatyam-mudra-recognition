@@ -1,0 +1,9 @@
+experiment_id,variant,features_used,configured_max_epochs,actual_epochs_trained,final_training_loss,validation_accuracy_pct,validation_macro_precision,validation_macro_recall,validation_macro_f1,validation_weighted_f1,fit_time_seconds,val_inference_fps,model_path
+Model_B_Geometric98_E200,Model_B_Geometric98,98,200,200,0.00285,95.45,0.9362,0.9262,0.9304,0.9543,20.4,863438.6,models\v5_experiment\mlp_Model_B_Geometric98_e200.joblib
+Model_A_Coords63_E100,Model_A_Coords63,63,100,100,0.01675,94.86,0.9364,0.9228,0.9286,0.9484,7.94,893666.1,models\v5_experiment\mlp_Model_A_Coords63_e100.joblib
+Model_A_Coords63_E200,Model_A_Coords63,63,200,200,0.01912,94.82,0.9355,0.9219,0.9278,0.9479,17.6,763998.1,models\v5_experiment\mlp_Model_A_Coords63_e200.joblib
+Model_B_Geometric98_E300,Model_B_Geometric98,98,300,300,0.06695,94.78,0.9319,0.9199,0.9248,0.9476,31.77,1342417.4,models\v5_experiment\mlp_Model_B_Geometric98_e300.joblib
+Model_B_Geometric98_E100,Model_B_Geometric98,98,100,100,0.00997,94.9,0.9333,0.918,0.9243,0.9485,9.49,656644.4,models\v5_experiment\mlp_Model_B_Geometric98_e100.joblib
+Model_A_Coords63_E300,Model_A_Coords63,63,300,300,0.09417,94.45,0.9289,0.9201,0.9238,0.9444,26.54,765088.5,models\v5_experiment\mlp_Model_A_Coords63_e300.joblib
+Model_B_Geometric98_E50,Model_B_Geometric98,98,50,50,0.02663,94.71,0.933,0.9168,0.9238,0.9467,4.72,759052.8,models\v5_experiment\mlp_Model_B_Geometric98_e50.joblib
+Model_A_Coords63_E50,Model_A_Coords63,63,50,50,0.05416,93.48,0.9236,0.9118,0.9168,0.9345,4.18,762239.3,models\v5_experiment\mlp_Model_A_Coords63_e50.joblib

@@ -19,3 +19,11 @@ Thumbs.db
 # Temporary webcam captures
 reports/webcam_debug_frame.jpg
 reports/webcam_sample.jpg
+
+# Generated landmark datasets (reproducible; do not redistribute)
+data/processed/augmented_experiment/
+data/processed/v3_experiment/
+
+# Redundant high-volume audit artifacts
+reports/dataset_merge_audit/duplicate_review/pairs/
+reports/dataset_merge_audit/contact_sheets.zip

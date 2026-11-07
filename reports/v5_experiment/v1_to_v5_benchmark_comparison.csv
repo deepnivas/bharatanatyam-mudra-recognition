@@ -1,0 +1,6 @@
+model_generation,classifier_type,features_used,feature_dim,training_samples,conditional_acc_pct,e2e_acc_pct,macro_precision,macro_recall,macro_f1,latency_ms,inference_fps,model_size_mb
+V1_Original_Baseline,RBF SVM (C=10.0),63 raw coordinates,63,2181,91.48,83.9,0.9234,0.9148,0.9137,0.35,2850.0,0.58
+V2_Augmented_Baseline,RBF SVM (Balanced),63 raw coordinates,63,12280,89.82,82.38,0.8979,0.8919,0.8915,0.36,2750.0,2.84
+V3_Cascade_Control,RBF SVM (Unweighted),63 raw coordinates,63,13416,90.97,83.43,0.9103,0.9049,0.9037,0.35,2873.9,3.05
+V4_Geometric_SVM,RBF SVM (C=15.0),98 angles + distances,98,13416,90.97,83.43,0.9099,0.9052,0.9033,0.31,3180.7,5.54
+V5_MLP_Model_B_Geometric98_E200,"MLP (128-64, Adam, 200ep)",98 features,98,13416,89.93,82.48,0.8948,0.8937,0.8926,0.002,404802.0,0.37

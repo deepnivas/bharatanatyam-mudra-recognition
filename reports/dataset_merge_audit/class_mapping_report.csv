@@ -1,0 +1,52 @@
+original_class_name,new_dataset_folder,original_training_count,original_testing_count,new_dataset_image_count,mapping_status,label_verification_status,notes
+1-Pataka,Pathaka(1),80,35,568,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (1-Pataka <-> Pathaka(1)). Requires visual gesture and hand orientation verification before merging.
+2-Tripataka,Tripathaka(1),80,35,551,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (2-Tripataka <-> Tripathaka(1)). Requires visual gesture and hand orientation verification before merging.
+3-Ardhapataka,Ardhapathaka(1),80,35,577,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (3-Ardhapataka <-> Ardhapathaka(1)). Requires visual gesture and hand orientation verification before merging.
+4-Kartharimukha,Katrimukha(1),80,35,564,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (4-Kartharimukha <-> Katrimukha(1)). Requires visual gesture and hand orientation verification before merging.
+5-Mayura,Mayura(1),80,35,534,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (5-Mayura <-> Mayura(1)). Requires visual gesture and hand orientation verification before merging.
+6-Ardhachandra,Ardhachandran(1),80,35,463,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (6-Ardhachandra <-> Ardhachandran(1)). Requires visual gesture and hand orientation verification before merging.
+7-Arala,Aralam(1),80,35,615,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (7-Arala <-> Aralam(1)). Requires visual gesture and hand orientation verification before merging.
+8-Shukatunda,Shukatundam(1),80,35,559,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (8-Shukatunda <-> Shukatundam(1)). Requires visual gesture and hand orientation verification before merging.
+9-Mushti,Mushti(1),80,35,490,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (9-Mushti <-> Mushti(1)). Requires visual gesture and hand orientation verification before merging.
+10-Shikara,Sikharam(1),80,35,530,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (10-Shikara <-> Sikharam(1)). Requires visual gesture and hand orientation verification before merging.
+11-Kapitta,Kapith(1),80,35,558,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (11-Kapitta <-> Kapith(1)). Requires visual gesture and hand orientation verification before merging.
+12-Katakamukha_1,Katakamukha_1,80,35,492,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (12-Katakamukha_1 <-> Katakamukha_1). Requires visual gesture and hand orientation verification before merging.
+13-Katakamukha_2,Katakamukha_2,80,35,488,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (13-Katakamukha_2 <-> Katakamukha_2). Requires visual gesture and hand orientation verification before merging.
+14-Katakamukha_3,Katakamukha_3,80,35,507,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (14-Katakamukha_3 <-> Katakamukha_3). Requires visual gesture and hand orientation verification before merging.
+15-Suchi,Suchi(1),80,35,485,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (15-Suchi <-> Suchi(1)). Requires visual gesture and hand orientation verification before merging.
+16-Chandrakala,Chandrakala(1),80,35,466,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (16-Chandrakala <-> Chandrakala(1)). Requires visual gesture and hand orientation verification before merging.
+17-Padmakosha,Padmakosha(1),80,35,495,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (17-Padmakosha <-> Padmakosha(1)). Requires visual gesture and hand orientation verification before merging.
+18-Sarpashirasha,Sarpasirsha(1),80,35,563,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (18-Sarpashirasha <-> Sarpasirsha(1)). Requires visual gesture and hand orientation verification before merging.
+19-Mrugashirsha,Mrigasirsha(1),80,35,559,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (19-Mrugashirsha <-> Mrigasirsha(1)). Requires visual gesture and hand orientation verification before merging.
+20-Simhamukha,Simhamukham(1),80,35,523,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (20-Simhamukha <-> Simhamukham(1)). Requires visual gesture and hand orientation verification before merging.
+21-Kangula,Kangulam(1),80,35,527,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (21-Kangula <-> Kangulam(1)). Requires visual gesture and hand orientation verification before merging.
+22-Alapadma,Alapadmam(1),80,35,537,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (22-Alapadma <-> Alapadmam(1)). Requires visual gesture and hand orientation verification before merging.
+23-Chathura,Chaturam(1),80,35,466,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (23-Chathura <-> Chaturam(1)). Requires visual gesture and hand orientation verification before merging.
+24-Bhramara,Bramaram(1),80,35,455,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (24-Bhramara <-> Bramaram(1)). Requires visual gesture and hand orientation verification before merging.
+25-Hamsassya,Hamsasyam(1),80,35,565,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (25-Hamsassya <-> Hamsasyam(1)). Requires visual gesture and hand orientation verification before merging.
+26-Hamsapaksha,Hamsapaksha(1),80,35,569,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (26-Hamsapaksha <-> Hamsapaksha(1)). Requires visual gesture and hand orientation verification before merging.
+27-Samdamsha,NO MATCH,80,35,0,MISSING_IN_NEW_DATASET,NOT_APPLICABLE,Samdamsha has NO MATCH in the new dataset. CRITICAL: Do NOT map to Samputa(1) (Samputa is a double-hand mudra).
+28-Mukula,Mukulam(1),80,35,571,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (28-Mukula <-> Mukulam(1)). Requires visual gesture and hand orientation verification before merging.
+29-Tamrachuda,Tamarachudam(1),80,35,559,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (29-Tamrachuda <-> Tamarachudam(1)). Requires visual gesture and hand orientation verification before merging.
+30-Trishula,Trishulam(1),80,35,560,CANDIDATE_MATCH,PENDING_VISUAL_INSPECTION,Candidate match based on name equivalence (30-Trishula <-> Trishulam(1)). Requires visual gesture and hand orientation verification before merging.
+[EXCLUDED_DOUBLE_HAND],Anjali(1),0,0,593,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Berunda(1),0,0,573,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Chakra(1),0,0,610,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Garuda(1),0,0,633,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Kapotham(1),0,0,669,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Karkatta(1),0,0,550,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Kartariswastika(1),0,0,681,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Katakavardhana(1),0,0,769,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Khatva(1),0,0,463,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Kilaka(1),0,0,458,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Kurma(1),0,0,602,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Matsya(1),0,0,663,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Nagabandha(1),0,0,577,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Pasha(1),0,0,507,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Pushpaputa(1),0,0,723,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Sakata(1),0,0,614,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Samputa(1),0,0,648,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Shanka(1),0,0,724,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Shivalinga(1),0,0,681,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Swastikam(1),0,0,745,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.
+[EXCLUDED_DOUBLE_HAND],Varaha(1),0,0,552,EXCLUDED_DOUBLE_HAND,NOT_APPLICABLE,Double-hand gesture (Samyuta Hasta); excluded from single-hand classification model.

@@ -1,0 +1,2 @@
+total_images,stage1_detected,stage1_rate_pct,stage2_recovered,stage2_recovery_pct,total_cascade_detected,cascade_detection_rate_pct,images_lost_from_stage1,net_gain_over_stage1,total_unrecovered_failures,invalid_landmarks,total_execution_time_sec,stage1_time_sec,stage2_time_sec,overall_throughput_fps
+13844,10099,72.95,1136,30.33,11235,81.15,0,1136,2609,0,416.3,313.4,79.5,33.3

@@ -1,0 +1,12 @@
+config_id,config_name,confidence_threshold,total_images,detected_count,detection_rate_pct,recovered_over_baseline,lost_from_baseline,net_gain,invalid_landmarks,time_seconds,throughput_fps,ms_per_image,is_baseline
+C6_upscale15_conf03,Upscale 1.5x (Conf=0.3),0.3,2770,2292,82.74,287,9,278,0,46.16,60.0,16.66,False
+C10_pad_upscale15_conf03,Square Pad + 1.5x (Conf=0.3),0.3,2770,2290,82.67,287,11,276,0,83.0,33.4,29.97,False
+C7_upscale20_conf03,Upscale 2.0x (Conf=0.3),0.3,2770,2289,82.64,285,10,275,0,49.65,55.8,17.93,False
+C1_raw_conf03,Raw Image (Conf=0.3),0.3,2770,2252,81.3,242,4,238,0,40.99,67.6,14.8,False
+C4_pad_conf03,Square Pad (Conf=0.3),0.3,2770,2246,81.08,239,7,232,0,44.94,61.6,16.22,False
+C5_upscale15_conf05,Upscale 1.5x (Conf=0.5),0.5,2770,2045,73.83,60,29,31,0,44.65,62.0,16.12,False
+C0_baseline,"Baseline (Raw, Conf=0.5)",0.5,2770,2014,72.71,0,0,0,0,39.04,71.0,14.09,True
+C3_pad_conf05,Square Pad (Conf=0.5),0.5,2770,2011,72.6,7,10,-3,0,42.87,64.6,15.48,False
+C9_clahe_conf03,CLAHE Contrast (Conf=0.3),0.3,2770,1907,68.84,142,249,-107,0,72.18,38.4,26.06,False
+C2_raw_conf07,Raw Image (Conf=0.7),0.7,2770,1692,61.08,1,323,-322,0,36.76,75.4,13.27,False
+C8_clahe_conf05,CLAHE Contrast (Conf=0.5),0.5,2770,1619,58.45,63,458,-395,0,41.15,67.3,14.86,False

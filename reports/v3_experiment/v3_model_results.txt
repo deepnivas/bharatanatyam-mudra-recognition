@@ -1,0 +1,45 @@
+========================================================================
+    BHARATANATYAM MUDRA RECOGNITION - EXPERIMENTAL MODEL V3 REPORT
+========================================================================
+
+1. DATASET & ARCHITECTURE
+------------------------------------------------------------------------
+Total Training Samples:      13,416 samples across 30 classes
+  - Original Benchmark:      2,181 samples
+  - Two-Stage Cascade:       11,235 samples (10,099 Stage 1 + 1,136 Stage 2 recovered)
+Classes:                     30 Canonical Bharatanatyam Mudra Classes
+Classifier Pipeline:         StandardScaler + SVC(kernel='rbf', C=10.0, probability=True)
+Selected Best Model:         UNWEIGHTED RBF SVM
+
+2. THREE-WAY COMPARATIVE BENCHMARK (OFFICIAL TEST SET: 1,050 IMAGES)
+------------------------------------------------------------------------
+Metric                      Baseline (Original)     V2 (Augmented)     V3 (Cascade V3)
+------------------------------------------------------------------------
+Conditional Accuracy:        91.48%                  89.82%              90.97%
+End-to-End Accuracy:         83.90%                  82.38%              83.43%
+Macro F1-Score:             0.9137                 0.8915             0.9037
+Weighted F1-Score:          —                       0.8974                 0.9083
+Macro Precision:            0.9234                  0.8979                 0.9103
+Macro Recall:               0.9148                  0.8919                 0.9049
+Inference Latency:          —                       —                      0.35 ms/sample
+Inference Throughput:       —                       —                      2829.9 FPS
+
+3. BALANCED VS UNWEIGHTED COMPARISON (V3)
+------------------------------------------------------------------------
+  Balanced     | Cond Acc: 89.82% | E2E Acc: 82.38% | Macro F1: 0.8917 | Macro Prec: 0.8976 | Macro Rec: 0.8924
+  Unweighted   | Cond Acc: 90.97% | E2E Acc: 83.43% | Macro F1: 0.9037 | Macro Prec: 0.9103 | Macro Rec: 0.9049
+
+4. TOP CONFUSED CLASS PAIRS (V3 TEST SET)
+------------------------------------------------------------------------
+  24-Bhramara          --> Predicted as 12-Katakamukha_1     (12 errors)
+  21-Kangula           --> Predicted as 28-Mukula            (7 errors)
+  2-Tripataka          --> Predicted as 1-Pataka             (5 errors)
+  23-Chathura          --> Predicted as 26-Hamsapaksha       (5 errors)
+  3-Ardhapataka        --> Predicted as 2-Tripataka          (4 errors)
+  12-Katakamukha_1     --> Predicted as 24-Bhramara          (3 errors)
+  17-Padmakosha        --> Predicted as 27-Samdamsha         (3 errors)
+  18-Sarpashirasha     --> Predicted as 1-Pataka             (3 errors)
+  26-Hamsapaksha       --> Predicted as 19-Mrugashirsha      (3 errors)
+  8-Shukatunda         --> Predicted as 2-Tripataka          (2 errors)
+  19-Mrugashirsha      --> Predicted as 26-Hamsapaksha       (2 errors)
+  21-Kangula           --> Predicted as 15-Suchi             (2 errors)

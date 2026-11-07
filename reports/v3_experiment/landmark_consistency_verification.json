@@ -1,0 +1,155 @@
+{
+  "summary": {
+    "num_tested_samples": 50,
+    "mean_raw_coord_mae": 0.005927688926458358,
+    "mean_feature_mae": 0.012850810881936924,
+    "median_feature_mae": 0.0060725698713213205,
+    "p95_feature_mae": 0.058311040326952904,
+    "max_feature_err_observed": 0.347791850566864,
+    "mean_cosine_similarity": 0.9973638832569123,
+    "min_cosine_similarity": 0.9533714056015015,
+    "is_consistent": true
+  },
+  "samples": [
+    {
+      "image": "Alapadmam_0.jpg",
+      "raw_coord_mae": 0.012394016608595848,
+      "normalized_feature_mae": 0.018644945695996284,
+      "normalized_feature_max_err": 0.08147931098937988,
+      "cosine_similarity": 0.9976352453231812
+    },
+    {
+      "image": "Alapadmam_1.jpg",
+      "raw_coord_mae": 0.005710575729608536,
+      "normalized_feature_mae": 0.008687712252140045,
+      "normalized_feature_max_err": 0.03152412176132202,
+      "cosine_similarity": 0.9996250867843628
+    },
+    {
+      "image": "Alapadmam_10.jpg",
+      "raw_coord_mae": 0.005654691252857447,
+      "normalized_feature_mae": 0.008109752088785172,
+      "normalized_feature_max_err": 0.043282538652420044,
+      "cosine_similarity": 0.9995019435882568
+    },
+    {
+      "image": "Alapadmam_100.jpg",
+      "raw_coord_mae": 0.003298508934676647,
+      "normalized_feature_mae": 0.004590117372572422,
+      "normalized_feature_max_err": 0.01823638379573822,
+      "cosine_similarity": 0.9998580813407898
+    },
+    {
+      "image": "Anjali_1.jpg",
+      "raw_coord_mae": 0.004156485199928284,
+      "normalized_feature_mae": 0.0071321818977594376,
+      "normalized_feature_max_err": 0.017131924629211426,
+      "cosine_similarity": 0.9997445940971375
+    },
+    {
+      "image": "Anjali_10.jpg",
+      "raw_coord_mae": 0.0036606036592274904,
+      "normalized_feature_mae": 0.004068269394338131,
+      "normalized_feature_max_err": 0.016135036945343018,
+      "cosine_similarity": 0.9998995661735535
+    },
+    {
+      "image": "Anjali_100.jpg",
+      "raw_coord_mae": 0.007939271628856659,
+      "normalized_feature_mae": 0.013354307971894741,
+      "normalized_feature_max_err": 0.07084715366363525,
+      "cosine_similarity": 0.9986828565597534
+    },
+    {
+      "image": "Anjali_101.jpg",
+      "raw_coord_mae": 0.0016575739718973637,
+      "normalized_feature_mae": 0.0019346149638295174,
+      "normalized_feature_max_err": 0.009229201823472977,
+      "cosine_similarity": 0.9999701380729675
+    },
+    {
+      "image": "Aralam_0.jpg",
+      "raw_coord_mae": 0.007587315049022436,
+      "normalized_feature_mae": 0.014802557416260242,
+      "normalized_feature_max_err": 0.04472440481185913,
+      "cosine_similarity": 0.9988120198249817
+    },
+    {
+      "image": "Aralam_1.jpg",
+      "raw_coord_mae": 0.002505206037312746,
+      "normalized_feature_mae": 0.010473327711224556,
+      "normalized_feature_max_err": 0.03133875131607056,
+      "cosine_similarity": 0.999342143535614
+    },
+    {
+      "image": "Aralam_10.jpg",
+      "raw_coord_mae": 0.0011280995095148683,
+      "normalized_feature_mae": 0.0012075346894562244,
+      "normalized_feature_max_err": 0.00427854061126709,
+      "cosine_similarity": 0.9999922513961792
+    },
+    {
+      "image": "Aralam_101.jpg",
+      "raw_coord_mae": 0.002654415788128972,
+      "normalized_feature_mae": 0.002353769028559327,
+      "normalized_feature_max_err": 0.008534073829650879,
+      "cosine_similarity": 0.9999616742134094
+    },
+    {
+      "image": "Ardhachandran_0.jpg",
+      "raw_coord_mae": 0.0009173523867502809,
+      "normalized_feature_mae": 0.0019651863258332014,
+      "normalized_feature_max_err": 0.007413633167743683,
+      "cosine_similarity": 0.9999817609786987
+    },
+    {
+      "image": "Ardhachandran_1.jpg",
+      "raw_coord_mae": 0.001032747677527368,
+      "normalized_feature_mae": 0.0066652847453951836,
+      "normalized_feature_max_err": 0.01933155208826065,
+      "cosine_similarity": 0.9998207092285156
+    },
+    {
+      "image": "Ardhachandran_10.jpg",
+      "raw_coord_mae": 0.0012558038579300046,
+      "normalized_feature_mae": 0.002793392864987254,
+      "normalized_feature_max_err": 0.009631335735321045,
+      "cosine_similarity": 0.9999517202377319
+    },
+    {
+      "image": "Ardhachandran_100.jpg",
+      "raw_coord_mae": 0.00227575795724988,
+      "normalized_feature_mae": 0.007133552338927984,
+      "normalized_feature_max_err": 0.01704639196395874,
+      "cosine_similarity": 0.999847412109375
+    },
+    {
+      "image": "Ardhapathaka_0.jpg",
+      "raw_coord_mae": 0.0017145624151453376,
+      "normalized_feature_mae": 0.0033926060423254967,
+      "normalized_feature_max_err": 0.014504045248031616,
+      "cosine_similarity": 0.9999145269393921
+    },
+    {
+      "image": "Ardhapathaka_1.jpg",
+      "raw_coord_mae": 0.0019014491699635983,
+      "normalized_feature_mae": 0.0030233662109822035,
+      "normalized_feature_max_err": 0.007977738976478577,
+      "cosine_similarity": 0.9999616146087646
+    },
+    {
+      "image": "Ardhapathaka_10.jpg",
+      "raw_coord_mae": 0.000972528534475714,
+      "normalized_feature_mae": 0.004121142905205488,
+      "normalized_feature_max_err": 0.013299345970153809,
+      "cosine_similarity": 0.9998763799667358
+    },
+    {
+      "image": "Ardhapathaka_101.jpg",
+      "raw_coord_mae": 0.0005125552415847778,
+      "normalized_feature_mae": 0.000635269156191498,
+      "normalized_feature_max_err": 0.0027303844690322876,
+      "cosine_similarity": 0.9999971389770508
+    }
+  ]
+}

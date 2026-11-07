@@ -1,0 +1,111 @@
+dataset,split_or_type,class_folder,image_count,valid_images,corrupted_images,extensions,min_width,max_width,avg_width,min_height,max_height,avg_height,channels,expected_count,count_verified
+Original,Training,1-Pataka,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,2-Tripataka,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,3-Ardhapataka,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,4-Kartharimukha,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,5-Mayura,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,6-Ardhachandra,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,7-Arala,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,8-Shukatunda,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,9-Mushti,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,10-Shikara,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,11-Kapitta,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,12-Katakamukha_1,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,13-Katakamukha_2,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,14-Katakamukha_3,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,15-Suchi,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,16-Chandrakala,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,17-Padmakosha,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,18-Sarpashirasha,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,19-Mrugashirsha,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,20-Simhamukha,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,21-Kangula,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,22-Alapadma,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,23-Chathura,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,24-Bhramara,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,25-Hamsassya,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,26-Hamsapaksha,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,27-Samdamsha,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,28-Mukula,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,29-Tamrachuda,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Training,30-Trishula,80,80,0,.jpg,900,900,900.0,900,900,900.0,3,80,True
+Original,Testing,1-Pataka,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,2-Tripataka,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,3-Ardhapataka,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,4-Kartharimukha,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,5-Mayura,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,6-Ardhachandra,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,7-Arala,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,8-Shukatunda,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,9-Mushti,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,10-Shikara,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,11-Kapitta,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,12-Katakamukha_1,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,13-Katakamukha_2,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,14-Katakamukha_3,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,15-Suchi,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,16-Chandrakala,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,17-Padmakosha,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,18-Sarpashirasha,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,19-Mrugashirsha,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,20-Simhamukha,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,21-Kangula,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,22-Alapadma,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,23-Chathura,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,24-Bhramara,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,25-Hamsassya,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,26-Hamsapaksha,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,27-Samdamsha,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,28-Mukula,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,29-Tamrachuda,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+Original,Testing,30-Trishula,35,35,0,.jpg,900,900,900.0,900,900,900.0,3,35,True
+New,Single-Hand (Asamyuta),Alapadmam(1),537,537,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Anjali(1),593,593,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Aralam(1),615,615,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Ardhachandran(1),463,463,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Ardhapathaka(1),577,577,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Berunda(1),573,573,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Bramaram(1),455,455,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Chakra(1),610,610,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Chandrakala(1),466,466,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Chaturam(1),466,466,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Garuda(1),633,633,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Hamsapaksha(1),569,569,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Hamsasyam(1),565,565,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Kangulam(1),527,527,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Kapith(1),558,558,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Kapotham(1),669,669,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Karkatta(1),550,550,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Kartariswastika(1),681,681,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Katakamukha_1,492,492,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Katakamukha_2,488,488,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Katakamukha_3,507,507,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Katakavardhana(1),769,769,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Katrimukha(1),564,564,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Khatva(1),463,463,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Kilaka(1),458,458,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Kurma(1),602,602,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Matsya(1),663,663,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Mayura(1),534,534,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Mrigasirsha(1),559,559,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Mukulam(1),571,571,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Mushti(1),490,490,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Nagabandha(1),577,577,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Padmakosha(1),495,495,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Pasha(1),507,507,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Pathaka(1),568,568,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Pushpaputa(1),723,723,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Sakata(1),614,614,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Samputa(1),648,648,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Sarpasirsha(1),563,563,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Shanka(1),724,724,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Shivalinga(1),681,681,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Shukatundam(1),559,559,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Sikharam(1),530,530,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Simhamukham(1),523,523,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Suchi(1),485,485,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Swastikam(1),745,745,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Tamarachudam(1),559,559,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Tripathaka(1),551,551,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Single-Hand (Asamyuta),Trishulam(1),560,560,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True
+New,Double-Hand (Samyuta),Varaha(1),552,552,0,.jpg,666,666,666.0,500,500,500.0,3,N/A (Unspecified),True

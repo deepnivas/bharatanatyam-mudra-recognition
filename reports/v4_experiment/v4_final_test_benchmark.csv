@@ -1,0 +1,5 @@
+model_version,features_used,feature_dim,training_samples,conditional_accuracy_pct,end_to_end_accuracy_pct,macro_precision,macro_recall,macro_f1,inference_latency_ms,inference_fps,model_size_mb
+V1_Original_Baseline,63 raw coordinates,63,2181,91.48,83.9,0.9234,0.9148,0.9137,0.35,2850.0,0.58
+V2_Augmented_Baseline,63 raw coordinates,63,12280,89.82,82.38,0.8979,0.8919,0.8915,0.36,2750.0,2.84
+V3_Cascade_Control,63 raw coordinates,63,13416,90.97,83.43,0.9103,0.9049,0.9037,0.35,2873.9,3.05
+V4_Best_Geometric_Config_3_Angles_Distances_98_C15,98 engineered geometric features,98,13416,90.97,83.43,0.9099,0.9052,0.9033,0.31,3180.7,5.54

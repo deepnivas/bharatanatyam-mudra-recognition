@@ -1,0 +1,26 @@
+{
+  "model_version": "V4",
+  "timestamp": "2026-11-07 16:13:58",
+  "best_configuration": "Config_3_Angles_Distances_98_C15",
+  "feature_count": 98,
+  "total_training_samples": 13416,
+  "test_detected_samples": 963,
+  "total_test_images": 1050,
+  "metrics": {
+    "conditional_accuracy": 0.9096573208722741,
+    "end_to_end_accuracy": 0.8342857142857143,
+    "macro_precision": 0.9099397559391716,
+    "macro_recall": 0.9052219444941477,
+    "macro_f1": 0.903294610487296,
+    "weighted_f1": 0.9082314515082438,
+    "inference_latency_ms": 0.3143961184492735,
+    "inference_fps": 3180.7008462203576,
+    "model_size_mb": 5.542790412902832
+  },
+  "control_metrics": {
+    "conditional_accuracy": 0.9096573208722741,
+    "end_to_end_accuracy": 0.8342857142857143,
+    "macro_f1": 0.9036958043539608
+  },
+  "pipeline": "Pipeline(steps=[('scaler', StandardScaler()),\n                ('svm', SVC(C=15.0, probability=True, random_state=42))])"
+}

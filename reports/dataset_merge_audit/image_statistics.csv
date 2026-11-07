@@ -1,0 +1,13 @@
+category,metric,original_dataset,new_dataset,combined_or_comparison,notes
+Dataset Overview,Total Images,3450,28431,31881,"Original: 2,400 train + 1,050 test. New: 28,431 images."
+Dataset Overview,Total Classes,30,50,30 Orig vs 50 New,New dataset contains 29 single-hand + 21 double-hand classes.
+Class Vocabulary,Single-Hand (Asamyuta) Classes,30,29,29 candidate matches,Samdamsha (Class 27) missing in new dataset.
+Class Vocabulary,Double-Hand (Samyuta) Classes,0,21,21 segregated,Double-hand gestures must not be merged into single-hand models.
+Image Dimensions,Width (Min / Avg / Max),900 / 900.0 / 900,666 / 666.0 / 666,Dimensions comparison,Inspect dimension consistency across camera sources.
+Image Dimensions,Height (Min / Avg / Max),900 / 900.0 / 900,500 / 500.0 / 500,Dimensions comparison,Inspect aspect ratio consistency across camera sources.
+File Integrity,Corrupted / Unreadable Images,0,0,0,Recorded in corrupted_images.csv.
+Hashing Pipeline,Hashing Attempted / Succeeded / Skipped,3450 / 3450 / 0,28431 / 28431 / 0,31881 / 31881 / 0,Recorded in hashing_failures.csv.
+Duplicate Detection,Cross-Dataset Exact Duplicates (SHA-256),N/A,N/A,0,Exact binary duplicates across datasets (Test leakage: 0).
+Duplicate Detection,Suspected Perceptual Duplicates (pHash <= threshold),N/A,N/A,42,Threshold <= 8 bits (Test leakage: 5).
+Data Leakage,Potential Test-Set Leakage Images,"1,050 Test Images","28,431 Images",5,New images matching original testing set must be strictly excluded from training.
+Class Coverage,Candidate Class Mapping Coverage,29 / 30 (96.7%),29 / 29 Single-Hand (100%),"29 Matches, 1 Missing",Samdamsha missing (0% new coverage).

@@ -1,0 +1,41 @@
+{
+  "model_version": "V5_MLP",
+  "timestamp": "2026-11-07 16:44:12",
+  "best_experiment_id": "Model_B_Geometric98_E200",
+  "architecture": {
+    "input_features": 98,
+    "hidden_layers": [
+      128,
+      64
+    ],
+    "activation": "relu",
+    "solver": "adam",
+    "learning_rate_init": 0.001,
+    "batch_size": 64,
+    "configured_epochs": 200,
+    "actual_epochs_trained": 200,
+    "final_training_loss": 0.005355633209626819
+  },
+  "dataset_sizes": {
+    "training_samples": 13416,
+    "test_detected_samples": 963,
+    "test_total_samples": 1050
+  },
+  "validation_metrics": {
+    "validation_accuracy_pct": 95.45,
+    "validation_macro_f1": 0.9304,
+    "validation_weighted_f1": 0.9543
+  },
+  "test_metrics": {
+    "conditional_accuracy_pct": 89.93,
+    "end_to_end_accuracy_pct": 82.48,
+    "macro_precision": 0.8948,
+    "macro_recall": 0.8937,
+    "macro_f1": 0.8926,
+    "weighted_f1": 0.8978,
+    "classifier_latency_ms": 0.002,
+    "classifier_inference_fps": 404802.0,
+    "model_size_mb": 0.37
+  },
+  "pipeline": "Pipeline(steps=[('scaler', StandardScaler()),\n                ('mlp',\n                 MLPClassifier(batch_size=64, hidden_layer_sizes=(128, 64),\n                               n_iter_no_change=200, random_state=42,\n                               tol=1e-09))])"
+}
