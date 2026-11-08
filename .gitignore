@@ -27,3 +27,4 @@ data/processed/v3_experiment/
 # Redundant high-volume audit artifacts
 reports/dataset_merge_audit/duplicate_review/pairs/
 reports/dataset_merge_audit/contact_sheets.zip
+.coverage

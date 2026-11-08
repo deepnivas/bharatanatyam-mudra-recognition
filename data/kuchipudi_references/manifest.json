@@ -1,0 +1,257 @@
+{
+  "project_name": "Antigravity Interactive Kuchipudi Mudra Recognition and Correction Kiosk",
+  "version": "1.1.0-audit-corrected",
+  "last_updated": "2026-11-08",
+  "supported_mudras_count": 30,
+  "reference_library_metrics": {
+    "total_registered_records": 30,
+    "verified_references_count": 0,
+    "pending_references_count": 30,
+    "imported_references_count": 0,
+    "total_verified_images": 30,
+    "total_verified_landmark_files": 30,
+    "total_verified_metadata_files": 30
+  },
+  "mudras": {
+    "1-Pataka": {
+      "traditional_name": "Pataka (Flag)",
+      "metadata_path": "data/kuchipudi_references/metadata/1-Pataka_metadata.json",
+      "image_path": "data/kuchipudi_references/images/1-Pataka_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/1-Pataka_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "10-Shikara": {
+      "traditional_name": "Shikara (Peak / Spire)",
+      "metadata_path": "data/kuchipudi_references/metadata/10-Shikara_metadata.json",
+      "image_path": "data/kuchipudi_references/images/10-Shikara_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/10-Shikara_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "11-Kapitta": {
+      "traditional_name": "Kapitta (Wood apple)",
+      "metadata_path": "data/kuchipudi_references/metadata/11-Kapitta_metadata.json",
+      "image_path": "data/kuchipudi_references/images/11-Kapitta_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/11-Kapitta_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "12-Katakamukha_1": {
+      "traditional_name": "Katakamukha Type 1 (Bracelet opening)",
+      "metadata_path": "data/kuchipudi_references/metadata/12-Katakamukha_1_metadata.json",
+      "image_path": "data/kuchipudi_references/images/12-Katakamukha_1_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/12-Katakamukha_1_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "13-Katakamukha_2": {
+      "traditional_name": "Katakamukha Type 2",
+      "metadata_path": "data/kuchipudi_references/metadata/13-Katakamukha_2_metadata.json",
+      "image_path": "data/kuchipudi_references/images/13-Katakamukha_2_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/13-Katakamukha_2_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "14-Katakamukha_3": {
+      "traditional_name": "Katakamukha Type 3",
+      "metadata_path": "data/kuchipudi_references/metadata/14-Katakamukha_3_metadata.json",
+      "image_path": "data/kuchipudi_references/images/14-Katakamukha_3_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/14-Katakamukha_3_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "15-Suchi": {
+      "traditional_name": "Suchi (Needle)",
+      "metadata_path": "data/kuchipudi_references/metadata/15-Suchi_metadata.json",
+      "image_path": "data/kuchipudi_references/images/15-Suchi_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/15-Suchi_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "16-Chandrakala": {
+      "traditional_name": "Chandrakala (Crescent moon)",
+      "metadata_path": "data/kuchipudi_references/metadata/16-Chandrakala_metadata.json",
+      "image_path": "data/kuchipudi_references/images/16-Chandrakala_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/16-Chandrakala_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "17-Padmakosha": {
+      "traditional_name": "Padmakosha (Lotus bud / pocket)",
+      "metadata_path": "data/kuchipudi_references/metadata/17-Padmakosha_metadata.json",
+      "image_path": "data/kuchipudi_references/images/17-Padmakosha_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/17-Padmakosha_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "18-Sarpashirasha": {
+      "traditional_name": "Sarpashirasha (Snake head)",
+      "metadata_path": "data/kuchipudi_references/metadata/18-Sarpashirasha_metadata.json",
+      "image_path": "data/kuchipudi_references/images/18-Sarpashirasha_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/18-Sarpashirasha_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "19-Mrugashirsha": {
+      "traditional_name": "Mrugashirsha (Deer head)",
+      "metadata_path": "data/kuchipudi_references/metadata/19-Mrugashirsha_metadata.json",
+      "image_path": "data/kuchipudi_references/images/19-Mrugashirsha_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/19-Mrugashirsha_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "2-Tripataka": {
+      "traditional_name": "Tripataka (Three-part flag)",
+      "metadata_path": "data/kuchipudi_references/metadata/2-Tripataka_metadata.json",
+      "image_path": "data/kuchipudi_references/images/2-Tripataka_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/2-Tripataka_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "20-Simhamukha": {
+      "traditional_name": "Simhamukha (Lion face)",
+      "metadata_path": "data/kuchipudi_references/metadata/20-Simhamukha_metadata.json",
+      "image_path": "data/kuchipudi_references/images/20-Simhamukha_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/20-Simhamukha_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "21-Kangula": {
+      "traditional_name": "Kangula (Bell / Tail)",
+      "metadata_path": "data/kuchipudi_references/metadata/21-Kangula_metadata.json",
+      "image_path": "data/kuchipudi_references/images/21-Kangula_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/21-Kangula_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "22-Alapadma": {
+      "traditional_name": "Alapadma (Full blown lotus)",
+      "metadata_path": "data/kuchipudi_references/metadata/22-Alapadma_metadata.json",
+      "image_path": "data/kuchipudi_references/images/22-Alapadma_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/22-Alapadma_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "23-Chathura": {
+      "traditional_name": "Chathura (Square / Four)",
+      "metadata_path": "data/kuchipudi_references/metadata/23-Chathura_metadata.json",
+      "image_path": "data/kuchipudi_references/images/23-Chathura_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/23-Chathura_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "24-Bhramara": {
+      "traditional_name": "Bhramara (Bee)",
+      "metadata_path": "data/kuchipudi_references/metadata/24-Bhramara_metadata.json",
+      "image_path": "data/kuchipudi_references/images/24-Bhramara_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/24-Bhramara_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "25-Hamsassya": {
+      "traditional_name": "Hamsassya (Swan beak)",
+      "metadata_path": "data/kuchipudi_references/metadata/25-Hamsassya_metadata.json",
+      "image_path": "data/kuchipudi_references/images/25-Hamsassya_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/25-Hamsassya_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "26-Hamsapaksha": {
+      "traditional_name": "Hamsapaksha (Swan wing)",
+      "metadata_path": "data/kuchipudi_references/metadata/26-Hamsapaksha_metadata.json",
+      "image_path": "data/kuchipudi_references/images/26-Hamsapaksha_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/26-Hamsapaksha_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "27-Samdamsha": {
+      "traditional_name": "Samdamsha (Pincer / Tongs)",
+      "metadata_path": "data/kuchipudi_references/metadata/27-Samdamsha_metadata.json",
+      "image_path": "data/kuchipudi_references/images/27-Samdamsha_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/27-Samdamsha_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "28-Mukula": {
+      "traditional_name": "Mukula (Bud / Blossom)",
+      "metadata_path": "data/kuchipudi_references/metadata/28-Mukula_metadata.json",
+      "image_path": "data/kuchipudi_references/images/28-Mukula_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/28-Mukula_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "29-Tamrachuda": {
+      "traditional_name": "Tamrachuda (Rooster / Cock)",
+      "metadata_path": "data/kuchipudi_references/metadata/29-Tamrachuda_metadata.json",
+      "image_path": "data/kuchipudi_references/images/29-Tamrachuda_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/29-Tamrachuda_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "3-Ardhapataka": {
+      "traditional_name": "Ardhapataka (Half flag)",
+      "metadata_path": "data/kuchipudi_references/metadata/3-Ardhapataka_metadata.json",
+      "image_path": "data/kuchipudi_references/images/3-Ardhapataka_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/3-Ardhapataka_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "30-Trishula": {
+      "traditional_name": "Trishula (Trident)",
+      "metadata_path": "data/kuchipudi_references/metadata/30-Trishula_metadata.json",
+      "image_path": "data/kuchipudi_references/images/30-Trishula_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/30-Trishula_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "4-Kartharimukha": {
+      "traditional_name": "Kartharimukha (Scissors face)",
+      "metadata_path": "data/kuchipudi_references/metadata/4-Kartharimukha_metadata.json",
+      "image_path": "data/kuchipudi_references/images/4-Kartharimukha_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/4-Kartharimukha_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "5-Mayura": {
+      "traditional_name": "Mayura (Peacock)",
+      "metadata_path": "data/kuchipudi_references/metadata/5-Mayura_metadata.json",
+      "image_path": "data/kuchipudi_references/images/5-Mayura_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/5-Mayura_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "6-Ardhachandra": {
+      "traditional_name": "Ardhachandra (Half moon)",
+      "metadata_path": "data/kuchipudi_references/metadata/6-Ardhachandra_metadata.json",
+      "image_path": "data/kuchipudi_references/images/6-Ardhachandra_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/6-Ardhachandra_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "7-Arala": {
+      "traditional_name": "Arala (Bent / Curved)",
+      "metadata_path": "data/kuchipudi_references/metadata/7-Arala_metadata.json",
+      "image_path": "data/kuchipudi_references/images/7-Arala_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/7-Arala_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "8-Shukatunda": {
+      "traditional_name": "Shukatunda (Parrot beak)",
+      "metadata_path": "data/kuchipudi_references/metadata/8-Shukatunda_metadata.json",
+      "image_path": "data/kuchipudi_references/images/8-Shukatunda_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/8-Shukatunda_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    },
+    "9-Mushti": {
+      "traditional_name": "Mushti (Fist)",
+      "metadata_path": "data/kuchipudi_references/metadata/9-Mushti_metadata.json",
+      "image_path": "data/kuchipudi_references/images/9-Mushti_reference.jpg",
+      "landmarks_path": "data/kuchipudi_references/landmarks/9-Mushti_reference.npy",
+      "validation_status": "pending_instructor_validation",
+      "has_instructor_tolerances": false
+    }
+  }
+}
