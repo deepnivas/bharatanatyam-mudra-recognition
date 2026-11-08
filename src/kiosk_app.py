@@ -246,6 +246,11 @@ class InteractiveMudraKiosk:
 
         self.window_name = "Kuchipudi Mudra Recognition & Correction Kiosk"
 
+    def close(self) -> None:
+        """Closes recognition engine resources cleanly."""
+        if hasattr(self, "rec_engine") and self.rec_engine is not None:
+            self.rec_engine.close()
+
     @property
     def current_expected_mudra(self) -> str:
         return self.supported_mudras[self.current_mudra_idx]

@@ -90,6 +90,8 @@ class MudraCorrectionReport:
         reference_landmarks: Optional[np.ndarray] = None,
         similarity_score: float = 0.0,
         explanation: str = "",
+        has_instructor_tolerances: bool = False,
+        validation_status: str = "pending_instructor_validation",
     ) -> None:
         self.state = state
         self.expected_mudra = expected_mudra
@@ -101,6 +103,8 @@ class MudraCorrectionReport:
         self.reference_landmarks = reference_landmarks
         self.similarity_score = similarity_score
         self.explanation = explanation
+        self.has_instructor_tolerances = has_instructor_tolerances
+        self.validation_status = validation_status
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -113,6 +117,8 @@ class MudraCorrectionReport:
             "similarity_score": round(self.similarity_score, 4),
             "explanation": self.explanation,
             "reference_image_path": self.reference_image_path,
+            "has_instructor_tolerances": self.has_instructor_tolerances,
+            "validation_status": self.validation_status,
         }
 
 
@@ -233,6 +239,8 @@ class MudraCorrectionEngine:
         ref_meta = ref_data["metadata"]
         ref_pts = ref_data["landmarks"]
         ref_img_path = ref_data["image_path"]
+        val_status = ref_meta.get("instructor_validation_status", "pending_instructor_validation")
+        has_tolerances = ref_meta.get("has_instructor_tolerances", False) and (val_status == "instructor_verified")
 
         # Check for STATE B: WRONG MUDRA
         if not rec_result.is_expected_match:
@@ -250,13 +258,15 @@ class MudraCorrectionEngine:
                 reference_image_path=ref_img_path,
                 reference_landmarks=ref_pts,
                 explanation=f"Detected mudra '{rec_result.predicted_mudra}' differs from target '{expected_mudra}'.",
+                has_instructor_tolerances=has_tolerances,
+                validation_status=val_status,
             )
 
-        # STATE A vs STATE C: FINGER GEOMETRIC ANALYSIS
+        # STATE A vs STATE C vs UNABLE TO ASSESS (REFERENCE VALIDATION REQUIRED)
         user_pts = rec_result.landmarks_21_3
         user_angles = compute_joint_angles(user_pts)
         ref_angles = np.array(ref_meta["joint_angles_mean"], dtype=np.float32)
-        tolerances = np.array(ref_meta["joint_angle_tolerances"], dtype=np.float32)
+        tolerances = np.array(ref_meta.get("joint_angle_tolerances", [0.08] * 15), dtype=np.float32)
 
         finger_statuses: Dict[str, FingerStatus] = {}
         instructions: List[str] = []
@@ -279,7 +289,6 @@ class MudraCorrectionEngine:
                 finger_statuses[finger_name] = FingerStatus.CORRECT
             elif violations == 1 and np.max(abs_diffs - tols) < 0.12:
                 finger_statuses[finger_name] = FingerStatus.NEEDS_ADJUSTMENT
-                # Construct constructive instruction
                 max_idx = int(np.argmax(abs_diffs))
                 diff_val = diffs[max_idx]
                 if diff_val > 0:
@@ -299,16 +308,34 @@ class MudraCorrectionEngine:
         # Overall similarity score: normalized Euclidean distance between landmark points
         dist_matrix = np.linalg.norm(user_pts - ref_pts, axis=1)
         mean_dist = float(np.mean(dist_matrix))
-        # Map distance to similarity [0, 1] (0.0 distance -> 1.0 similarity, 0.4 distance -> 0.0)
         similarity = float(np.clip(1.0 - (mean_dist / 0.40), 0.0, 1.0))
 
-        # Determine if STATE A or STATE C
+        # AUDIT RULE: STATE A cannot be issued using unverified reference data!
+        # If instructor-approved tolerances are missing, return REFERENCE VALIDATION REQUIRED.
+        if not has_tolerances:
+            return MudraCorrectionReport(
+                state=MudraEvaluationState.STATE_D_UNABLE_TO_ASSESS,
+                expected_mudra=expected_mudra,
+                recognized_mudra=rec_result.predicted_mudra,
+                confidence=rec_result.confidence,
+                finger_statuses=finger_statuses,
+                instructions=[
+                    "REFERENCE VALIDATION REQUIRED: Class recognized, but instructor-approved Kuchipudi tolerances are pending verification."
+                ],
+                reference_image_path=ref_img_path,
+                reference_landmarks=ref_pts,
+                similarity_score=similarity,
+                explanation="REFERENCE VALIDATION REQUIRED",
+                has_instructor_tolerances=False,
+                validation_status=val_status,
+            )
+
+        # When instructor-approved tolerances are verified:
         if incorrect_finger_count == 0 and len(instructions) == 0:
             final_state = MudraEvaluationState.STATE_A_CORRECT
             final_instructions = ["Pose meets accepted instructor reference criteria! Excellent!"]
             explanation = "All finger joint angles and hand geometry are within accepted reference tolerances."
         elif incorrect_finger_count == 0 and len(instructions) <= 2:
-            # Minor adjustments only
             final_state = MudraEvaluationState.STATE_C_INCORRECT_EXECUTION
             final_instructions = instructions
             explanation = "Mudra class recognized correctly, but minor finger position adjustments are required."
@@ -328,6 +355,8 @@ class MudraCorrectionEngine:
             reference_landmarks=ref_pts,
             similarity_score=similarity,
             explanation=explanation,
+            has_instructor_tolerances=True,
+            validation_status="instructor_verified",
         )
 
     def draw_correction_skeleton(

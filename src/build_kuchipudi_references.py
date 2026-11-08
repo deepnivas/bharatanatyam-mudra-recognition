@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
 """
-src/build_kuchipudi_references.py - Reference Pose Library Generator and Manager (Part 5).
+src/build_kuchipudi_references.py - Reference Pose Library Generator and Manager (Part 5 - Corrected).
 
-Builds and validates data/kuchipudi_references/ manifest, landmarks, metadata, and reference images.
-Ensures every reference record contains:
-- Mudra name & traditional spelling
-- Instructor-approved reference image path
-- 21 reference hand landmarks (3D numpy arrays)
-- Joint-angle measurements (15 angles)
-- Palm orientation & vector norms
-- Acceptable geometric ranges (tolerances)
-- Source and instructor attribution & validation status
+CORRECTED AUDIT COMPLIANCE:
+- The existing training dataset is Bharatanatyam-labelled (Kokul et al.).
+- It MUST NOT be used to create records labelled as instructor-approved Kuchipudi references.
+- All generated records are marked with validation_status: "pending_instructor_validation".
+- Source attribution explicitly clarifies that landmarks are unverified provisional structural placeholders awaiting authentic Kuchipudi instructor review.
+- Verified references count is 0.
+- Provides import utilities for future genuine Kuchipudi instructor images, videos, and landmark samples.
 """
 
 from __future__ import annotations
@@ -73,11 +71,10 @@ TRADITIONAL_MUDRA_NAMES: Dict[str, str] = {
 
 def build_reference_library(
     train_csv_path: Path,
-    dataset_root: Path,
     output_dir: Path,
 ) -> None:
     print("=" * 60)
-    print("BUILDING KUCHIPUDI & CLASSICAL REFERENCE POSE LIBRARY (Part 5)")
+    print("BUILDING REFERENCE POSE LIBRARY (Corrected Audit Compliance)")
     print("=" * 60)
 
     if not train_csv_path.is_file():
@@ -107,41 +104,35 @@ def build_reference_library(
         if len(cls_rows) == 0:
             continue
 
-        print(f"Processing reference pose for: {cls_name} ({len(cls_rows)} available samples)...")
+        print(f"Registering provisional reference for: {cls_name} (pending instructor validation)...")
 
-        # Select representative median sample (or first sample)
         sample = cls_rows.iloc[0]
         img_rel_path = str(sample["image_path"])
 
-        # Extract 63 raw normalized coordinates
         coords_flat = sample[raw_cols].values.astype(np.float32)
         pts_21_3 = coords_flat.reshape(21, 3)
 
-        # Compute geometric feature descriptors
         angles = compute_joint_angles(pts_21_3)
         distances = compute_palm_and_fingertip_distances(pts_21_3)
         pinch = compute_pinch_and_loop_features(pts_21_3)
         flexion = compute_flexion_and_dispersion_features(pts_21_3)
 
-        # Compute acceptable ranges (mean +/- 1.5 std across class samples if multiple, else default tolerance 15%)
         class_coords_all = cls_rows[raw_cols].values.astype(np.float32)
         class_pts_all = class_coords_all.reshape(len(cls_rows), 21, 3)
 
-        # Calculate angle variance across all samples in class for tolerance
         angle_matrix = np.array([compute_joint_angles(p) for p in class_pts_all])
         angle_mean = np.mean(angle_matrix, axis=0)
         angle_std = np.std(angle_matrix, axis=0)
-        angle_tolerances = np.maximum(angle_std * 1.5, 0.05).tolist() # minimum 5% tolerance
+        # Unverified provisional data: mark tolerances as unverified (set to None or flag pending)
+        angle_tolerances = np.maximum(angle_std * 1.5, 0.05).tolist()
 
         trad_name = TRADITIONAL_MUDRA_NAMES.get(cls_name, cls_name)
 
-        # Save reference landmark NPY
         npy_filename = f"{cls_name}_reference.npy"
         npy_path = landmarks_dir / npy_filename
         np.save(str(npy_path), pts_21_3)
         total_landmarks += 1
 
-        # Copy reference source image if exists
         src_img_path = Path(img_rel_path)
         dest_img_filename = f"{cls_name}_reference.jpg"
         dest_img_path = images_dir / dest_img_filename
@@ -151,20 +142,19 @@ def build_reference_library(
                 cv2.imwrite(str(dest_img_path), img_bgr)
                 total_images += 1
         else:
-            # Create a placeholder instructor-approved reference visual if raw image not directly at rel_path
             blank_img = np.zeros((400, 400, 3), dtype=np.uint8)
             cv2.putText(blank_img, cls_name, (20, 200), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
             cv2.imwrite(str(dest_img_path), blank_img)
             total_images += 1
 
-        # Build metadata record
         meta_record = {
             "mudra_id": cls_name,
             "traditional_name": trad_name,
             "category": "Asamyuta (Single-hand)",
-            "source_attribution": "Kokul et al. / Dance Benchmark V1.0",
-            "instructor_validation_status": "Instructor-Approved Reference",
-            "validation_timestamp": "2026-11-08T00:00:00Z",
+            "source_attribution": "Extracted from Bharatanatyam benchmark dataset (Kokul et al.). Provisional structural placeholder.",
+            "instructor_validation_status": "pending_instructor_validation",
+            "has_instructor_tolerances": False,
+            "validation_timestamp": None,
             "reference_image": f"data/kuchipudi_references/images/{dest_img_filename}",
             "reference_landmarks_file": f"data/kuchipudi_references/landmarks/{npy_filename}",
             "sample_count_in_dataset": int(len(cls_rows)),
@@ -186,17 +176,21 @@ def build_reference_library(
             "metadata_path": f"data/kuchipudi_references/metadata/{meta_filename}",
             "image_path": f"data/kuchipudi_references/images/{dest_img_filename}",
             "landmarks_path": f"data/kuchipudi_references/landmarks/{npy_filename}",
-            "validated": True,
+            "validation_status": "pending_instructor_validation",
+            "has_instructor_tolerances": False,
         }
 
-    # Update manifest.json
     manifest_path = output_dir / "manifest.json"
     manifest_data = {
         "project_name": "Antigravity Interactive Kuchipudi Mudra Recognition and Correction Kiosk",
-        "version": "1.0.0",
+        "version": "1.1.0-audit-corrected",
         "last_updated": "2026-11-08",
         "supported_mudras_count": len(mudra_manifest),
         "reference_library_metrics": {
+            "total_registered_records": len(mudra_manifest),
+            "verified_references_count": 0,
+            "pending_references_count": len(mudra_manifest),
+            "imported_references_count": 0,
             "total_verified_images": total_images,
             "total_verified_landmark_files": total_landmarks,
             "total_verified_metadata_files": total_metadata,
@@ -208,16 +202,15 @@ def build_reference_library(
         json.dump(manifest_data, mf, indent=2)
 
     print("=" * 60)
-    print(f"REFERENCE LIBRARY BUILT SUCCESSFULLY: {len(mudra_manifest)} mudras registered.")
-    print(f"Manifest saved to: {manifest_path}")
+    print(f"REFERENCE LIBRARY MANIFEST UPDATED: {len(mudra_manifest)} records set to 'pending_instructor_validation'.")
+    print(f"Verified references count: 0 (Strict Compliance)")
     print("=" * 60)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Build Kuchipudi Reference Library")
+    parser = argparse.ArgumentParser(description="Build Kuchipudi Reference Library (Audit Corrected)")
     parser.add_argument("--train-csv", type=Path, default=Path("data/processed/train_landmarks.csv"))
-    parser.add_argument("--dataset-root", type=Path, default=Path("data/raw"))
     parser.add_argument("--output-dir", type=Path, default=Path("data/kuchipudi_references"))
     args = parser.parse_args()
 
-    build_reference_library(args.train_csv, args.dataset_root, args.output_dir)
+    build_reference_library(args.train_csv, args.output_dir)

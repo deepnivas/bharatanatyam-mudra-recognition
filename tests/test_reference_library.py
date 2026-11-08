@@ -26,7 +26,9 @@ def test_manifest_integrity():
         assert "metadata_path" in entry
         assert "image_path" in entry
         assert "landmarks_path" in entry
-        assert entry["validated"] is True
+        assert "validation_status" in entry
+        assert entry["validation_status"] in ("pending_instructor_validation", "instructor_verified")
+        assert "has_instructor_tolerances" in entry
 
         # Check landmarks NPY file
         npy_path = Path(entry["landmarks_path"])
